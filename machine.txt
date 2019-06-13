@@ -1,0 +1,22 @@
+baba
+q1,a->a,R,q2
+q1,b->b,R,q2
+q2,a->c,L,q3
+q2,b->c,L,q4
+q2,c->c,R,q2
+q3,a->a,L,q3
+q3,b->b,L,q3
+q3,c->c,L,q3
+q3, ->a,R,q5
+q4,a->a,L,q4
+q4,b->b,L,q4
+q4,c->c,L,q4
+q4, ->b,R,q5
+q5,a->a,R,q5
+q5,b->b,R,q5
+q5,c->c,R,q2
+q5, -> ,L,q6
+q6,c-> ,L,q6
+q6,a->a,H,q0
+q6,b->b,H,q0
+q2, -> ,L,q6
